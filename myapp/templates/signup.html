@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="signup-container signup-forms">
+    <div class="signup-form custom-signup-form">
+        <div class="signup-form-content">
+            <header>Signup</header>
+            <form action="#">
+                <div class="signup-field custom-signup-input-field">
+                    <label for="email">Email:</label>
+                    <input type="email" placeholder="Email" class="signup-input">
+                </div>
+                <div class="signup-field custom-signup-input-field">
+                    <label for="password">Password:</label>
+                    <input type="password" placeholder="Create password" class="signup-password">
+                </div>
+                <div class="signup-field custom-signup-input-field">
+                    <input type="password" placeholder="Confirm password" class="signup-password">
+                    <i class='bx bx-hide signup-eye-icon'></i>
+                </div>
+                <div class="signup-field custom-signup-button-field">
+                    <button>Signup</button>
+                </div>
+            </form>
+            <div class="signup-form-link">
+                <span>Already have an account? <a href="#" class="signup-link custom-signup-login-link">Login</a></span>
+            </div>
+        </div>
+        <div class="signup-line"></div>
+        <div class="signup-media-options">
+            <a href="#" class="signup-field custom-signup-facebook">
+                <i class='bx bxl-facebook signup-facebook-icon'></i>
+                <span>Login with Facebook</span>
+            </a>
+        </div>
+        <div class="signup-media-options">
+            <a href="#" class="signup-field custom-signup-google">
+                <img src="#" alt="" class="signup-google-img">
+                <span>Login with Google</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

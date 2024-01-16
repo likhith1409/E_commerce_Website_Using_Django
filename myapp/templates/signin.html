@@ -1,0 +1,50 @@
+<!-- templates/signin.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="signin-container signin-forms">
+    <!-- Login Form -->
+    <div class="signin-form signin-login">
+        <div class="signin-form-content">
+            <header>Login</header>
+            <form action="#" method="post">
+                <div class="signin-field signin-input-field">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Enter your email" class="signin-input">
+                </div>
+                <div class="signin-field signin-input-field">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" placeholder="Enter your password" class="signin-password">
+                    <i class='bx bx-hide signin-eye-icon'></i>
+                </div>
+                <div class="signin-field signin-button-field">
+                    <button type="submit">Login</button>
+                </div>
+            </form>
+            <div class="signin-form-link">
+                <a href="#" class="signin-forgot-pass">Forgot password?</a>
+            </div>
+            <div class="signin-form-link">
+                <span>Don't have an account? <a href="#" class="signin-link signin-signup-link">Signup</a></span>
+            </div>
+        </div>
+        <div class="signin-line"></div>
+        <div class="signin-media-options">
+            <a href="#" class="signin-field signin-facebook signin-login">
+                <i class='bx bxl-facebook signin-facebook-icon'></i>
+                <span>Login with Facebook</span>
+            </a>
+        </div>
+        <div class="signin-media-options">
+            <a href="#" class="signin-field signin-google signin-login">
+                <img src="#" alt="" class="signin-google-img">
+                <span>Login with Google</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+
+
+{% endblock %}
